@@ -25,6 +25,7 @@ jobs:
         npm run build
 
     - name: Publish
-      run: npm publish --provenance --access public
+      working-directory: ./dist
+      run: npm publish
       env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

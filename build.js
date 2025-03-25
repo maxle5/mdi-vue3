@@ -33,7 +33,6 @@ test("{{name}} snapshot", () => {
 // refresh components
 await rimraf(resolve(__dirname, "dist"));
 await mkdir(resolve(__dirname, "dist"));
-await mkdir(resolve(__dirname, "dist/components"));
 
 // generate vue components from mdi js paths
 const icons = Object.entries(mdiIcons).map(([name, path]) => ({
@@ -43,7 +42,7 @@ const icons = Object.entries(mdiIcons).map(([name, path]) => ({
 
 for (const icon of icons) {
   await writeFile(
-    resolve(__dirname, "dist/components", icon.name + ".vue"),
+    resolve(__dirname, "dist", icon.name + ".vue"),
     componentTemplate
       .replace(/{{path}}/g, icon.path)
       .replace(/{{name}}/g, icon.name)
@@ -56,12 +55,12 @@ for (const icon of icons) {
 }
 
 // generate index.js file
-const main = icons
-  .map(
-    (icon) =>
-      `export { default as ${icon.name} } from './components/${icon.name}.vue';`
-  )
-  .sort()
-  .join("\n");
+// const main = icons
+//   .map(
+//     (icon) =>
+//       `export { default as ${icon.name} } from './components/${icon.name}.vue';`
+//   )
+//   .sort()
+//   .join("\n");
 
-await writeFile(resolve(__dirname, "dist/index.js"), main);
+// await writeFile(resolve(__dirname, "dist/index.js"), main);
