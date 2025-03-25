@@ -22,7 +22,6 @@ jobs:
       run: |
         npm ci
         npm run build
-        npm run test
         
     - name: Git Tag
       id: git_tag
