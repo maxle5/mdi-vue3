@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiAppleKeyboardOption snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M3,4H9.11L16.15,18H21V20H14.88L7.84,6H3V4M14,4H21V6H14V4Z" style="fill: currentColor;"></path>
-</svg>"
-`;

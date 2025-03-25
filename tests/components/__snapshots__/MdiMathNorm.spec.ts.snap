@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiMathNorm snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M14 21V3H16V21H14M8 21V3H10V21H8Z" style="fill: currentColor;"></path>
-</svg>"
-`;

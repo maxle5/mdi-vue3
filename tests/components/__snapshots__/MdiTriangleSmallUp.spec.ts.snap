@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiTriangleSmallUp snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M8 15H16L12 8" style="fill: currentColor;"></path>
-</svg>"
-`;

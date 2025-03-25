@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiDivingScubaFlag snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M2,6L19,20H2V6M5,4L22,18V4H5Z" style="fill: currentColor;"></path>
-</svg>"
-`;

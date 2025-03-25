@@ -2,11 +2,9 @@
   "name": "@maxle5/mdi-vue3",
   "version": "1.0.0",
   "type": "module",
-  "main": "dist/mdi-vue3.umd.js",
-  "module": "dist/mdi-vue3.es.js",
-  "types": "dist/index.d.ts",
+  "module": "src/index.ts",
   "files": [
-    "dist"
+    "src"
   ],
   "publishConfig": {
     "access": "public"
@@ -16,9 +14,6 @@
     "url": "git+https://github.com/maxle5/mdi-vue3.git"
   },
   "scripts": {
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "test": "vitest run --dom",
     "generate": "node generate.js"
   },
   "keywords": [
@@ -38,15 +33,11 @@
     "vue": "^3.5.13",
     "@mdi/js": "7.4.47",
     "@types/node": "^22.13.13",
-    "@vitejs/plugin-vue": "^5.2.3",
     "@vue/test-utils": "^2.4.6",
     "happy-dom": "^17.4.4",
     "path": "^0.12.7",
     "rimraf": "^6.0.1",
     "typescript": "^5.8.2",
-    "vite": "^6.2.3",
-    "vite-plugin-dts": "^4.5.3",
-    "vitest": "^3.0.9",
     "vue-tsc": "^2.2.8"
   },
   "license": "ISC",

@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiTallyMark2 snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M11 19H9V5H11V19M15 5H13V19H15V5Z" style="fill: currentColor;"></path>
-</svg>"
-`;

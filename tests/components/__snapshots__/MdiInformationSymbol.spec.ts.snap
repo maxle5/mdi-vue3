@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiInformationSymbol snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M11 9H13V7H11V9M11 17H13V11H11V17Z" style="fill: currentColor;"></path>
-</svg>"
-`;

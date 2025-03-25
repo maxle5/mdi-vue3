@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiDragVerticalVariant snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M11 21H9V3H11V21M15 3H13V21H15V3Z" style="fill: currentColor;"></path>
-</svg>"
-`;

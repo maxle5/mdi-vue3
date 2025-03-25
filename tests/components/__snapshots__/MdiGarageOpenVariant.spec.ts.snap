@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiGarageOpenVariant snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M22 9V20H20V11H4V20H2V9L12 5L22 9M19 12H5V14H19V12Z" style="fill: currentColor;"></path>
-</svg>"
-`;

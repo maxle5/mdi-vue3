@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiPentagon snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M12,2.5L2,9.8L5.8,21.5H18.2L22,9.8L12,2.5Z" style="fill: currentColor;"></path>
-</svg>"
-`;

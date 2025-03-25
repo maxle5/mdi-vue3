@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiColorHelper snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M0,24H24V20H0V24Z" style="fill: currentColor;"></path>
-</svg>"
-`;

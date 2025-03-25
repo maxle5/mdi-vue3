@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiAlphaT snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M9,7V9H11V17H13V9H15V7H9Z" style="fill: currentColor;"></path>
-</svg>"
-`;

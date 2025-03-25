@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiFilterVariant snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M6,13H18V11H6M3,6V8H21V6M10,18H14V16H10V18Z" style="fill: currentColor;"></path>
-</svg>"
-`;

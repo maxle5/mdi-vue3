@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiViewParallel snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M19 3V21H15V3H19M14 3V21H10V3H14M9 3V21H5V3H9Z" style="fill: currentColor;"></path>
-</svg>"
-`;

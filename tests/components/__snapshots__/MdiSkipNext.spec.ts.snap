@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiSkipNext snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M16,18H18V6H16M6,18L14.5,12L6,6V18Z" style="fill: currentColor;"></path>
-</svg>"
-`;

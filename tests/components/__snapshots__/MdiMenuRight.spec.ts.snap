@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiMenuRight snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M10,17L15,12L10,7V17Z" style="fill: currentColor;"></path>
-</svg>"
-`;

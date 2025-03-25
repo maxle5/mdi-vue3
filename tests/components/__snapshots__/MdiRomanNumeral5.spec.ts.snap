@@ -1,7 +1,0 @@
-// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
-
-exports[`MdiRomanNumeral5 snapshot 1`] = `
-"<svg width="24" height="24" viewBox="0 0 24 24">
-  <path d="M9 7L11 17H13L15 7H13L12 12L11 7H9Z" style="fill: currentColor;"></path>
-</svg>"
-`;
