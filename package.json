@@ -1,6 +1,6 @@
 {
   "name": "@maxle5/mdi-vue3",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "type": "module",
   "main": "dist/mdi-vue3.umd.js",
   "module": "dist/mdi-vue3.es.js",
