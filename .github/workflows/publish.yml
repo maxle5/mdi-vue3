@@ -2,8 +2,8 @@ name: publish
 
 on:
   push:
-    tags:        
-      - 'v*'
+    branches:
+      - main
 
 jobs:
   build:
@@ -23,7 +23,7 @@ jobs:
         npm ci
         npm run build
         
-    - name: Git Tag
+    - name: Create git tag (matching package.json)
       id: git_tag
       uses: Klemensas/action-autotag@stable
       with:
