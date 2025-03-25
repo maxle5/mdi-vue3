@@ -22,13 +22,6 @@ jobs:
       run: |
         npm ci
         npm run build
-        
-    - name: Create git tag (matching package.json)
-      id: git_tag
-      uses: Klemensas/action-autotag@stable
-      with:
-        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-        tag_prefix: "v"
 
     - name: Publish npm package
       if: ${{ steps.git_tag.tagname != ''}}        
