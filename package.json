@@ -2,9 +2,9 @@
   "name": "@maxle5/mdi-vue3",
   "version": "1.0.0",
   "type": "module",
-  "module": "src/index.ts",
+  "module": "dist/index.js",
   "files": [
-    "src"
+    "dist"
   ],
   "publishConfig": {
     "access": "public"
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/maxle5/mdi-vue3.git"
   },
   "scripts": {
-    "generate": "node generate.js"
+    "build": "node build.js"
   },
   "keywords": [
     "material",
