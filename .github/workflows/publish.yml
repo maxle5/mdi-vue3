@@ -12,19 +12,17 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     
-    - name: Use Node.js
-      uses: actions/setup-node@v3
+    - uses: actions/setup-node@v3
       with:
         node-version: 22.x
         cache: 'npm'
     
-    - name: Build & Test
+    - name: Build
       run: |
         npm ci
         npm run build
 
-    - name: Publish npm package
-      if: ${{ steps.git_tag.tagname != ''}}        
+    - name: Publish
       run: npm publish
       env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
