@@ -1,20 +1,12 @@
 
 <template>
-  <svg :width="size" :height="size" viewBox="0 0 24 24">
+  <svg :width="props.size" :height="props.size" viewBox="0 0 24 24">
       <path d="M5,3C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5M6,9H7.5L8.5,12.43L9.5,9H11L9.25,15H7.75L6,9M13,9H16.5C17.35,9 18,9.65 18,10.5V11.5C18,12.1 17.6,12.65 17.1,12.9L18,15H16.5L15.65,13H14.5V15H13V9M14.5,10.5V11.5H16.5V10.5H14.5Z" style="fill: currentColor" />
   </svg>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue';
-
-  export default defineComponent({
-      name: "MdiVirtualReality",
-      props: {
-          size: { 
-              type: Number, 
-              default: 24 
-          }
-      },
-  })
+<script setup lang="ts">
+  const props = withDefaults(defineProps<{size: number}>(), {
+    size: 24
+  });
 </script>

@@ -1,20 +1,12 @@
 
 <template>
-  <svg :width="size" :height="size" viewBox="0 0 24 24">
+  <svg :width="props.size" :height="props.size" viewBox="0 0 24 24">
       <path d="M17,4H7A5,5 0 0,0 2,9V20H20A2,2 0 0,0 22,18V9A5,5 0 0,0 17,4M10,18H4V9A3,3 0 0,1 7,6A3,3 0 0,1 10,9V18M20,18H12V9C12,7.92 11.65,6.86 11,6H17A3,3 0 0,1 20,9V18M13,11V13H17V15H19V11H13M9,11H5V9H9V11Z" style="fill: currentColor" />
   </svg>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue';
-
-  export default defineComponent({
-      name: "MdiMailboxOutline",
-      props: {
-          size: { 
-              type: Number, 
-              default: 24 
-          }
-      },
-  })
+<script setup lang="ts">
+  const props = withDefaults(defineProps<{size: number}>(), {
+    size: 24
+  });
 </script>

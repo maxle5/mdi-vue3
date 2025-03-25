@@ -1,20 +1,12 @@
 
 <template>
-  <svg :width="size" :height="size" viewBox="0 0 24 24">
+  <svg :width="props.size" :height="props.size" viewBox="0 0 24 24">
       <path d="M2 3V10L11 12L2 14V21L9.27 17.89A7 7 0 0 0 16 23A7 7 0 0 0 23 16A7 7 0 0 0 16 9L2 3M16 11A5 5 0 0 1 21 16A5 5 0 0 1 16 21A5 5 0 0 1 11 16A5 5 0 0 1 16 11M15 12.5V16.5L18 18.5L18.75 17.25L16.5 15.75V12.5H15Z" style="fill: currentColor" />
   </svg>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue';
-
-  export default defineComponent({
-      name: "MdiSendClock",
-      props: {
-          size: { 
-              type: Number, 
-              default: 24 
-          }
-      },
-  })
+<script setup lang="ts">
+  const props = withDefaults(defineProps<{size: number}>(), {
+    size: 24
+  });
 </script>

@@ -1,20 +1,12 @@
 
 <template>
-  <svg :width="size" :height="size" viewBox="0 0 24 24">
+  <svg :width="props.size" :height="props.size" viewBox="0 0 24 24">
       <path d="M16,9V14L16,20A2,2 0 0,1 14,22H10A2,2 0 0,1 8,20V14L8,9C8,7.14 9.27,5.57 11,5.13V4H9V2H15V4H13V5.13C14.73,5.57 16,7.14 16,9Z" style="fill: currentColor" />
   </svg>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue';
-
-  export default defineComponent({
-      name: "MdiGasCylinder",
-      props: {
-          size: { 
-              type: Number, 
-              default: 24 
-          }
-      },
-  })
+<script setup lang="ts">
+  const props = withDefaults(defineProps<{size: number}>(), {
+    size: 24
+  });
 </script>

@@ -1,20 +1,12 @@
 
 <template>
-  <svg :width="size" :height="size" viewBox="0 0 24 24">
+  <svg :width="props.size" :height="props.size" viewBox="0 0 24 24">
       <path d="M15,8V16H5V8H15M16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5V7A1,1 0 0,0 16,6Z" style="fill: currentColor" />
   </svg>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue';
-
-  export default defineComponent({
-      name: "MdiVideoOutline",
-      props: {
-          size: { 
-              type: Number, 
-              default: 24 
-          }
-      },
-  })
+<script setup lang="ts">
+  const props = withDefaults(defineProps<{size: number}>(), {
+    size: 24
+  });
 </script>

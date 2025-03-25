@@ -1,20 +1,12 @@
 
 <template>
-  <svg :width="size" :height="size" viewBox="0 0 24 24">
+  <svg :width="props.size" :height="props.size" viewBox="0 0 24 24">
       <path d="M18 9H11V11H18V9M11 13H16V15H11V13M22 21L19.5 19.32L17 21L14.5 19.32L12 21L9.5 19.32L7 21V5H22V21M20 16.57V7H9V16.57L12 18.59L14.5 16.9L17 18.59L20 16.57M3 7C2.4 7 2 7.4 2 8C2 8.6 2.4 9 3 9H5V7H3M2 11C1.4 11 1 11.4 1 12C1 12.6 1.4 13 2 13H5V11H2M1 15C.4 15 0 15.4 0 16C0 16.6 .4 17 1 17H5V15H1Z" style="fill: currentColor" />
   </svg>
 </template>
 
-<script lang="ts">
-  import { defineComponent } from 'vue';
-
-  export default defineComponent({
-      name: "MdiInvoiceTextFastOutline",
-      props: {
-          size: { 
-              type: Number, 
-              default: 24 
-          }
-      },
-  })
+<script setup lang="ts">
+  const props = withDefaults(defineProps<{size: number}>(), {
+    size: 24
+  });
 </script>
